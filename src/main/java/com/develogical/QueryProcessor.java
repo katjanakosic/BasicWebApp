@@ -11,6 +11,9 @@ public class QueryProcessor {
         else if(query.toLowerCase().contains("name")){
             return "Katjana";
         }
+        else if(query.toLowerCase().contains("plus")){
+            return "406";
+        }
         return "";
     }
 
