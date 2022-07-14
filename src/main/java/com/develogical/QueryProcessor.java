@@ -8,8 +8,11 @@ public class QueryProcessor {
                     "English poet, playwright, and actor, widely regarded as the greatest " +
                     "writer in the English language and the world's pre-eminent dramatist.";
         }
-        else if(query.toLowerCase().contains("name")){
-            return "Kati";
+        else if(query.toLowerCase().contains("plus")){
+            String [] numbers = query.toLowerCase().split(" ");
+            int x = Integer.parseInt(numbers[3]);
+            int y = Integer.parseInt(numbers[5]);
+            return x + y + "";
         }
         return "";
     }
